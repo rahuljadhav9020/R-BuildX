@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About R-BuildX</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .about-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .about-section h1 {
+            color: #473cbc;
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #512da8;
+            font-weight: 800;
+        }
+
+        .about-section h2 {
+            color: #473cbc;
+            font-size: 28px;
+            margin: 20px 0;
+            text-shadow: 0 0 5px #512da8;
+            font-weight: 700;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: justify;
+            font-weight: 600;
+        }
+
+        .about-section ol {
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .about-section ol li {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .team-member {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .team-member h3 {
+            color: #473cbc;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .team-member p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-email {
+            color: #473cbc;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        strong {
+            font-weight: 700;
+            color: #473cbc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head_content"></div>
+
+    <div class="about-container">
+        <div class="about-section">
+            <h1 class="slide-up">About R-BuildX</h1>
+
+            <section class="fade-in delay-1">
+                <h2>Our Mission</h2>
+                <p>Welcome to R-BuildX, your go-to platform for renting construction vehicles! Our mission is to make it easy for businesses, contractors, and individuals to access the essential resources they need for their projects—whether it's reliable vehicles for rent or construction equipment for building and development.</p>
+                <p>At R-BuildX, we believe that convenience and accessibility are key. We aim to provide a hassle-free experience where users can seamlessly browse vehicle rental options without complications. Whether you're a small business owner or working on a large-scale project, our goal is to ensure you have everything you need to keep your work on track.</p>
+            </section>
+
+            <section class="fade-in delay-2">
+                <h2>What We Offer</h2>
+                <ol>
+                    <li><strong>Vehicle Rentals:</strong> We offer a wide range of vehicles available for rent, including tankers, JCBs, dumpers, and other essential construction machinery. Each vehicle is equipped with detailed specifications, and we make the booking process as simple as possible.</li>
+                    <li><strong>User-Friendly Interface:</strong> Designed with the user in mind, our website offers easy navigation for quick vehicle rentals. Our platform is responsive, meaning you can access it from your phone, tablet, or computer without any issues.</li>
+                    <li><strong>Flexible Rental Terms:</strong> We understand that different projects have different timelines, so we offer flexible rental periods to suit your needs.</li>
+                    <li><strong>24/7 Customer Support:</strong> Our team is always here to help! We offer round-the-clock support to address any concerns or questions, ensuring your rental process is as smooth as possible.</li>
+                </ol>
+            </section>
+
+            <section class="fade-in delay-3">
+                <h2>Our Team</h2>
+                <div class="team-member">
+                    <h3>Satish Sawant</h3>
+                    <p>Co-Founder, Reg.Gov.Contractor</p>
+                    <p>Satish brings years of experience in the construction industry, ensuring our vehicle rental services meet the highest standards of quality and reliability.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Ananda Jadhav</h3>
+                    <p>Co-Founder, Vehicle Owner</p>
+                    <p>Ananda oversees our vehicle fleet, ensuring all equipment is well-maintained and ready for your construction needs.</p>
+                </div>
+            </section>
+
+            <section class="fade-in delay-4">
+                <h2>Get in Touch</h2>
+                <p>We would love to hear from you! Whether you have feedback, questions, or need assistance, feel free to reach out to us. You can contact us through our online contact form or email us at <a class="contact-email" href="mailto:support@rbuildx.com">support@rbuildx.com</a></p>
+            </section>
+        </div>
+    </div>
+
+    <div id="foot_content"></div>
+
+    <script>
+        $('#head_content').load('header.php');
+        $('#foot_content').load('footer.html');
+    </script>
+</body>
+
+</html>

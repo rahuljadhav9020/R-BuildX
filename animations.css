@@ -1,0 +1,204 @@
+/* Create new file animations.css */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Common animations */
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.scale-in {
+    animation: scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Delay utilities */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+/* Hover animations */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Button animations */
+.btn-animate {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-animate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Card description animations */
+@keyframes slideUpFade {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Card content animations */
+.card-title {
+    animation: slideUpFade 0.6s ease-out forwards;
+}
+
+.card-description {
+    animation: slideInRight 0.6s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+/* Hover effect for social blocks */
+.social-block {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.social-block h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.social-block p {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.social-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.social-block:hover h2 {
+    transform: translateY(-2px);
+}
+
+.social-block:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Vehicle card animations */
+.vehicle-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+.vehicle-info h3 {
+    opacity: 1;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-shadow: 5px 5px 4px rgb(0, 0, 0);
+}
+
+.vehicle-info p {
+    font-size: 16px;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+    
+}
+
+.vehicle-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.vehicle-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.4) 50%,
+        transparent 100%
+    );
+    pointer-events: none;
+}
+
+.order-btn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    margin-top: 15px;
+}
+
+/* Show description and button on hover */
+.vehicle-card:hover .vehicle-info p,
+.vehicle-card:hover .order-btn {
+    opacity: 1;
+    transform: translateY(0);
+} 
